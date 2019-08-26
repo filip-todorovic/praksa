@@ -71,19 +71,13 @@ public class HandlingAlerts extends BasePage{
 
     }
 
-    public void confirmationAlertOk() {
-
-        Assert.assertEquals(confirmOption.getText(),"You have clicked on OK");
 
 
+    public WebElement getConfirmOption() {
+        return confirmOption;
     }
 
-    public void confirmationAlertCancel(){
 
-        Assert.assertEquals(confirmOption.getText(),"You have clicked on Cancel");
-        //This comment has changed
-
-    }
 
     public void popUpAlert() throws InterruptedException {
 

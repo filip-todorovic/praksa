@@ -23,7 +23,8 @@ public class HandlingAlertsTest {
         handlingAlerts.opensAs("https://www.toolsqa.com/handling-alerts-using-selenium-webdriver/");
         handlingAlerts.clickConfirmationAlertOk();
         Thread.sleep(2000);
-        handlingAlerts.confirmationAlertOk();
+        Assert.assertEquals(handlingAlerts.getConfirmOption().getText(),"You have clicked on OK");
+     // handlingAlerts.confirmationAlertOk();
         handlingAlerts.quitWebDriver();
     }
 
@@ -32,7 +33,8 @@ public class HandlingAlertsTest {
         HandlingAlerts handlingAlerts = new HandlingAlerts();
         handlingAlerts.opensAs("https://www.toolsqa.com/handling-alerts-using-selenium-webdriver/");
         handlingAlerts.clickConfirmationAlertCancel();
-        handlingAlerts.confirmationAlertCancel();
+        Assert.assertEquals(handlingAlerts.getConfirmOption().getText(),"You have clicked on Cancel");
+     // handlingAlerts.confirmationAlertCancel();
         handlingAlerts.quitWebDriver();
     }
 
