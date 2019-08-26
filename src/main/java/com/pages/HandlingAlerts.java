@@ -81,7 +81,7 @@ public class HandlingAlerts extends BasePage{
     public void confirmationAlertCancel(){
 
         Assert.assertEquals(confirmOption.getText(),"You have clicked on Cancel");
-        //Add comment
+        //This comment has changed
 
     }
 
