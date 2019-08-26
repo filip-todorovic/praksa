@@ -68,7 +68,6 @@ public class HandlingAlerts extends BasePage{
         Alert confirmationAlert = driver.switchTo().alert();
         confirmationAlert.dismiss();
 
-
     }
 
 
@@ -84,7 +83,6 @@ public class HandlingAlerts extends BasePage{
         ((JavascriptExecutor) driver).executeScript("arguments[0].click()", promptPopUp);
         Alert promptAlert  = driver.switchTo().alert();
         promptAlert .sendKeys("Accepting the alert");
-      //  Thread.sleep(4000); //This sleep is not necessary, just for demonstration
         promptAlert .accept();
 
     }
